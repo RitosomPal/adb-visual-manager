@@ -6,6 +6,10 @@ A comprehensive desktop application for managing Android devices via ADB protoco
 ![Python](https://img.shields.io/badge/python-3.8+-green)
 ![License](https://img.shields.io/badge/license-MIT-orange)
 
+## 📸 Screenshots
+
+![App Demo](docs/adb-visual-manager_demo.gif)
+
 ## ✨ Features
 
 ### 🔌 Device Management
@@ -269,8 +273,8 @@ Contributions are welcome! Please:
 
 ## 📞 Support
 
-- Report bugs: [GitHub Issues](https://github.com/yourusername/adb-visual-manager/issues)
-- Documentation: [Wiki](https://github.com/yourusername/adb-visual-manager/wiki)
+- Report bugs: [GitHub Issues](https://github.com/RitosomPal/adb-visual-manager/issues)
+- Documentation: [Wiki](https://github.com/RitosomPal/adb-visual-manager/wiki)
 
 ## 🗺️ Roadmap
 
