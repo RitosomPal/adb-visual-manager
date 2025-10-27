@@ -45,8 +45,6 @@ class MainWindow(QMainWindow):
     def setup_ui(self):
         """Setup main window UI"""
         self.setWindowTitle(APP_NAME)
-        # icon_path = os.path.join(os.path.dirname(__file__), '..', '..', 'resources', 'icons', APP_ICON_PATH)
-        # print(icon_path)
         self.setWindowIcon(QIcon(APP_ICON_PATH)) 
         
         # Set absolute minimum size

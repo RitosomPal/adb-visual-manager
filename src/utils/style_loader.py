@@ -1,5 +1,6 @@
 """Stylesheet loader utility"""
 
+import sys
 from pathlib import Path
 import logging
 
@@ -18,7 +19,12 @@ def load_stylesheet(stylesheet_name: str) -> str:
     """
     try:
         # Get path to stylesheet
-        style_path = Path(__file__).parent.parent.parent / "resources" / "styles" / stylesheet_name
+        if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+            base_path = Path(getattr(sys, '_MEIPASS')) / "resources"
+        else:
+            base_path = Path(__file__).resolve().parent.parent.parent / "resources"
+
+        style_path = base_path / "styles" / stylesheet_name
         
         if not style_path.exists():
             logger.warning(f"Stylesheet not found: {style_path}")

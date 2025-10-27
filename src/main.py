@@ -11,16 +11,6 @@ from controllers.maincontroller import MainController
 from constants import APP_NAME, ORGANIZATION
 from utils.style_loader import load_combined_stylesheets
 
-def load_stylesheet(app):
-    """Load application stylesheet"""
-    stylesheet_path = Path(__file__).parent.parent / "resources" / "styles" / "darktheme.qss"
-    
-    if stylesheet_path.exists():
-        with open(stylesheet_path, 'r') as f:
-            app.setStyleSheet(f.read())
-    else:
-        print(f"Warning: Stylesheet not found at {stylesheet_path}")
-
 def main():
     """Application entry point"""
     # Setup logging
@@ -36,7 +26,8 @@ def main():
     app.setOrganizationName(ORGANIZATION)
     
     # Load dark theme
-    load_stylesheet(app)
+    stylesheet = load_combined_stylesheets("darktheme.qss", "table_style.qss", "tree_style.qss")
+    app.setStyleSheet(stylesheet)
     
     # Initialize ADB Manager
     logger.info("Initializing ADB Manager")
