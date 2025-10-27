@@ -1,0 +1,309 @@
+/* ============================================
+   Dark Theme - Ultra Compact Version
+   ============================================ */
+
+QMainWindow, QWidget {
+    background-color: #2b2b2b;
+    color: #bbbbbb;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 8pt;
+}
+
+/* ============================================
+   Buttons - ULTRA SMALL COMPACT
+   ============================================ */
+QPushButton {
+    background-color: #3c3f41;
+    color: #bbbbbb;
+    border: 1px solid #555555;
+    padding: 2px 6px;
+    border-radius: 1px;
+    min-width: 45px;
+    min-height: 18px;
+    max-height: 22px;
+    font-size: 8pt;
+}
+
+QPushButton:hover {
+    background-color: #4c5052;
+}
+
+QPushButton:pressed {
+    background-color: #2b2b2b;
+}
+
+QPushButton:disabled {
+    background-color: #3c3f41;
+    color: #666666;
+    border: 1px solid #444444;
+}
+
+
+/* ============================================
+   Combo Boxes
+   ============================================ */
+QComboBox {
+    background-color: #3c3f41;
+    color: #bbbbbb;
+    border: 1px solid #555555;
+    padding: 2px 6px;
+    border-radius: 2px;
+    min-height: 22px;
+    max-height: 24px;
+}
+
+QComboBox:hover { border: 1px solid #6c6f71; }
+
+QComboBox::drop-down { width: 16px; border: none; }
+
+QComboBox QAbstractItemView {
+    background-color: #3c3f41;
+    selection-background-color: #214283;
+}
+
+/* ============================================
+   Line Edits
+   ============================================ */
+QLineEdit {
+    background-color: #313335;
+    color: #bbbbbb;
+    border: 1px solid #555555;
+    padding: 2px 6px;
+    border-radius: 2px;
+    min-height: 22px;
+}
+
+QLineEdit:focus { border: 1px solid #6c6f71; }
+
+/* ============================================
+   Text Areas
+   ============================================ */
+QTextEdit, QPlainTextEdit {
+    background-color: #313335;
+    border: 1px solid #555555;
+    padding: 4px;
+}
+
+/* ============================================
+   Labels
+   ============================================ */
+QLabel {
+    background: transparent;
+    padding: 1px;
+    color: #bbbbbb;
+    font-size: 8pt;
+}
+
+/* ============================================
+   Tabs
+   ============================================ */
+QTabWidget::pane {
+    border: 1px solid #555555;
+    background-color: #2b2b2b;
+}
+
+QTabBar::tab {
+    background-color: #3c3f41;
+    padding: 4px 10px;
+    border: 1px solid #555555;
+    border-bottom: none;
+    margin-right: 2px;
+    min-height: 24px;
+    font-size: 8pt;
+}
+
+QTabBar::tab:selected { background-color: #2b2b2b; color: #ffffff; }
+QTabBar::tab:hover { background-color: #4c5052; }
+
+/* ============================================
+   Tables
+   ============================================ */
+QTableWidget {
+    background-color: #2b2b2b;
+    alternate-background-color: #313335;
+    gridline-color: #555555;
+    border: 1px solid #555555;
+    font-size: 8pt;
+}
+
+QTableWidget::item {
+    padding: 2px 4px;
+    min-height: 22px;
+}
+
+QTableWidget::item:selected { background-color: #214283; }
+
+QHeaderView::section {
+    background-color: #3c3f41;
+    padding: 3px 6px;
+    font-size: 8pt;
+    min-height: 22px;
+}
+
+/* ============================================
+   Tree & List Widgets
+   ============================================ */
+QTreeWidget, QListWidget {
+    background-color: #2b2b2b;
+    alternate-background-color: #313335;
+    border: 1px solid #555555;
+    font-size: 8pt;
+}
+
+QTreeWidget::item, QListWidget::item {
+    padding: 2px 4px;
+    min-height: 22px;
+}
+
+QTreeWidget::item:selected, QListWidget::item:selected {
+    background-color: #214283;
+}
+
+/* ============================================
+   Group Boxes
+   ============================================ */
+QGroupBox {
+    border: 1px solid #555555;
+    border-radius: 3px;
+    margin-top: 6px;
+    padding-top: 10px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    padding: 2px 5px;
+}
+
+/* ============================================
+   Checkboxes & Radio Buttons
+   ============================================ */
+QCheckBox, QRadioButton {
+    spacing: 4px;
+    padding: 1px;
+    font-size: 8pt;
+}
+
+QCheckBox::indicator, QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #555555;
+    background-color: #3c3f41;
+}
+
+QCheckBox::indicator:checked,
+QRadioButton::indicator:checked {
+    background-color: #214283;
+    border: 1px solid #214283;
+}
+
+/* ============================================
+   Menus & Toolbars
+   ============================================ */
+QMenuBar, QToolBar {
+    background-color: #3c3f41;
+    color: #bbbbbb;
+    font-size: 8pt;
+    padding: 2px;
+}
+
+QMenuBar::item { padding: 3px 6px; }
+QMenuBar::item:selected { background-color: #4c5052; }
+
+QMenu {
+    background-color: #3c3f41;
+    border: 1px solid #555555;
+    font-size: 8pt;
+}
+
+QMenu::item { padding: 4px 16px 4px 8px; }
+QMenu::item:selected { background-color: #214283; }
+
+/* ============================================
+   Status Bar
+   ============================================ */
+QStatusBar {
+    background-color: #3c3f41;
+    color: #bbbbbb;
+    font-size: 7.5pt;
+    padding: 2px 4px;
+    min-height: 20px;
+}
+
+/* ============================================
+   Scrollbars - Ultra Thin
+   ============================================ */
+QScrollBar:vertical {
+    background-color: #2b2b2b;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #555555;
+    border-radius: 5px;
+    min-height: 16px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #6c6f71;
+}
+
+QScrollBar:horizontal {
+    background-color: #2b2b2b;
+    height: 10px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #555555;
+    border-radius: 5px;
+    min-width: 16px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #6c6f71;
+}
+
+/* ============================================
+   Spin Boxes
+   ============================================ */
+QSpinBox, QDoubleSpinBox {
+    background-color: #3c3f41;
+    border: 1px solid #555555;
+    padding: 2px 4px;
+    min-height: 22px;
+}
+
+/* ============================================
+   Progress Bars
+   ============================================ */
+QProgressBar {
+    background-color: #3c3f41;
+    border: 1px solid #555555;
+    height: 14px;
+    font-size: 7.5pt;
+}
+
+QProgressBar::chunk {
+    background-color: #214283;
+}
+
+/* ============================================
+   Tooltips
+   ============================================ */
+QToolTip {
+    background-color: #3c3f41;
+    border: 1px solid #555555;
+    padding: 3px;
+    font-size: 7.5pt;
+}
+
+/* ============================================
+   Splitters
+   ============================================ */
+QSplitter::handle {
+    background-color: #555555;
+    width: 3px;
+}
+QSplitter::handle:hover {
+    background-color: #6c6f71;
+}

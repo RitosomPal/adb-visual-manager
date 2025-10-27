@@ -1,0 +1,5 @@
+PyQt5==5.15.11
+pure-python-adb==0.3.0.dev0
+qasync==0.28.0
+python-dateutil==2.9.0.post0
+psutil==7.1.2

@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# PyQt
+*.ui.autosave
+.qmlc
+
+# Build
+build/
+dist/
+*.spec
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Application
+*.log
+config.ini
+adb-manager.log

@@ -1,0 +1,128 @@
+/* ============================================
+   Application Manager Table - Compact Dark Style
+   ============================================ */
+
+QTableWidget {
+    background-color: #1e1e1e;
+    alternate-background-color: #252526;
+    gridline-color: #3e3e42;
+    border: 1px solid #3e3e42;
+    selection-background-color: #094771;
+    selection-color: #ffffff;
+    font-size: 8pt;
+    outline: none;
+}
+
+/* Compact Item Rows */
+QTableWidget::item {
+    padding: 3px 6px;
+    border: none;
+    color: #cccccc;
+    min-height: 20px;
+    max-height: 24px;
+}
+
+QTableWidget::item:selected {
+    background-color: #094771;
+    color: #ffffff;
+}
+
+QTableWidget::item:hover {
+    background-color: #2a2d2e;
+}
+
+/* ============================================
+   Header Styling - Compact
+   ============================================ */
+QHeaderView {
+    background-color: #2d2d30;
+    border: none;
+}
+
+QHeaderView::section {
+    background-color: #2d2d30;
+    color: #cccccc;
+    padding: 4px 8px;
+    border: none;
+    border-right: 1px solid #3e3e42;
+    border-bottom: 1px solid #007acc;
+    font-weight: bold;
+    font-size: 8pt;
+    min-height: 22px;
+}
+
+QHeaderView::section:hover {
+    background-color: #3e3e42;
+}
+
+QHeaderView::section:pressed {
+    background-color: #094771;
+}
+
+/* ============================================
+   Scrollbars - Compact & Thin
+   ============================================ */
+QTableWidget QScrollBar:vertical {
+    background-color: #1e1e1e;
+    width: 10px;
+    border: none;
+}
+
+QTableWidget QScrollBar::handle:vertical {
+    background-color: #3e3e42;
+    min-height: 20px;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+QTableWidget QScrollBar::handle:vertical:hover {
+    background-color: #4e4e52;
+}
+
+QTableWidget QScrollBar::handle:vertical:pressed {
+    background-color: #007acc;
+}
+
+QTableWidget QScrollBar::add-line:vertical,
+QTableWidget QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QTableWidget QScrollBar:horizontal {
+    background-color: #1e1e1e;
+    height: 10px;
+    border: none;
+}
+
+QTableWidget QScrollBar::handle:horizontal {
+    background-color: #3e3e42;
+    min-width: 20px;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+QTableWidget QScrollBar::handle:horizontal:hover {
+    background-color: #4e4e52;
+}
+
+QTableWidget QScrollBar::handle:horizontal:pressed {
+    background-color: #007acc;
+}
+
+QTableWidget QScrollBar::add-line:horizontal,
+QTableWidget QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* ============================================
+   Corner Widget & Focus Handling
+   ============================================ */
+QTableWidget QTableCornerButton::section {
+    background-color: #2d2d30;
+    border: none;
+}
+
+QTableWidget:focus {
+    outline: none;
+    border: 1px solid #007acc;
+}

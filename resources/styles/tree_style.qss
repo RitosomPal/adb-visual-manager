@@ -1,0 +1,138 @@
+/* ============================================
+   QTreeWidget - Dark Professional Compact Theme
+   ============================================ */
+
+QTreeWidget {
+    background-color: #1e1e1e;
+    alternate-background-color: #252526;
+    gridline-color: #2d2d30;
+    border: 1px solid #3e3e42;
+    selection-background-color: #094771;
+    selection-color: #ffffff;
+    font-size: 9pt;
+    outline: none;
+    show-decoration-selected: 1;
+}
+
+/* Items */
+QTreeWidget::item {
+    padding: 4px 6px;
+    border: none;
+    color: #cccccc;
+    background-color: transparent;
+}
+
+QTreeWidget::item:alternate {
+    background-color: #252526;
+}
+
+QTreeWidget::item:hover {
+    background-color: #2a2d2e;
+}
+
+QTreeWidget::item:selected {
+    background-color: #094771;
+    color: #ffffff;
+    border-left: 3px solid #007acc;
+}
+
+QTreeWidget::item:selected:hover {
+    background-color: #0d5a8f;
+}
+
+/* Header Styling */
+QHeaderView {
+    background-color: #2d2d30;
+    border: none;
+}
+
+QHeaderView::section {
+    background-color: #2d2d30;
+    color: #cccccc;
+    padding: 6px 8px;
+    border: none;
+    border-right: 1px solid #3e3e42;
+    border-bottom: 2px solid #007acc;
+    font-weight: bold;
+    font-size: 9pt;
+}
+
+QHeaderView::section:hover {
+    background-color: #3e3e42;
+}
+
+QHeaderView::section:pressed {
+    background-color: #094771;
+}
+
+/* Branch Indicators (expand/collapse) */
+QTreeWidget::branch {
+    background-color: #1e1e1e;
+    border: none;
+    image: none;
+}
+
+QTreeWidget::branch:has-children:!has-siblings:closed,
+QTreeWidget::branch:closed:has-children:has-siblings {
+    image: url(:/icons/branch-closed.svg);
+}
+
+QTreeWidget::branch:open:has-children:!has-siblings,
+QTreeWidget::branch:open:has-children:has-siblings {
+    image: url(:/icons/branch-open.svg);
+}
+
+/* Scrollbars */
+QTreeWidget QScrollBar:vertical {
+    background-color: #1e1e1e;
+    width: 12px;
+    border: none;
+}
+
+QTreeWidget QScrollBar::handle:vertical {
+    background-color: #3e3e42;
+    min-height: 24px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+QTreeWidget QScrollBar::handle:vertical:hover {
+    background-color: #4e4e52;
+}
+
+QTreeWidget QScrollBar::handle:vertical:pressed {
+    background-color: #007acc;
+}
+
+QTreeWidget QScrollBar:horizontal {
+    background-color: #1e1e1e;
+    height: 12px;
+    border: none;
+}
+
+QTreeWidget QScrollBar::handle:horizontal {
+    background-color: #3e3e42;
+    min-width: 24px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+QTreeWidget QScrollBar::handle:horizontal:hover {
+    background-color: #4e4e52;
+}
+
+QTreeWidget QScrollBar::handle:horizontal:pressed {
+    background-color: #007acc;
+}
+
+/* Corner Widget */
+QTreeWidget QTableCornerButton::section {
+    background-color: #2d2d30;
+    border: none;
+}
+
+/* Focus Indicator */
+QTreeWidget:focus {
+    outline: none;
+    border: 1px solid #007acc;
+}
