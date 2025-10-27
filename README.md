@@ -259,7 +259,7 @@ Contributions are welcome! Please:
 
 ## 👨‍💻 Author
 
-Your Name - [@RitosomPal](https://github.com/RitosomPal)
+- [@RitosomPal](https://github.com/RitosomPal)
 
 ## 🙏 Acknowledgments
 
